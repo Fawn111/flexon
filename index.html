@@ -11,13 +11,14 @@
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <body class=" bg-stone-100 h-screen m-0 p-0">
     <header class="bg-emerald-950">
-      <nav class="flex justify-between items-center w-[92%]  mx-auto bg-emerald-950 sm:pt-20 pb-10">
+      <nav class="flex justify-between items-center w-[92%]  mx-auto bg-emerald-950 sm:pt-20 lg:pt-6 pb-10">
           <div>
-            <h2 class="font-bold  md:text-7xl text-white p-2">Flexのn</h2>
+            <h2 class="font-bold sm:text-6xl md:text-6xl lg:text-6xl  text-white p-2">Flexのn</h2>
           </div>
           <div
-              class="nav-links duration-500 md:static absolute bg-emerald-950 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
-              <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 text-white md:hidden">
+              class="nav-links duration-500  bg-emerald-950 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5"
+              >
+              <ul class="gap-8 text-white flex sm:hidden lg:flex"> 
                   <li>
                       <a class="hover:text-gray-500" href="#">About</a>
                   </li>
@@ -36,10 +37,10 @@
               </ul>
           </div>
           <div class="flex items-center gap-4">
-            <a class="hover:text-gray-500 text-white md:text-5xl" href="#">Cart(0)</a>
-              <button class="bg-lime-300 text-black px-2 md:px-5  py-1 md:py-2 rounded-full hover:bg-lime-200 md:text-2xl md:hidden lg:text-base ">Sign in</button>
-              <button class="bg-lime-300 text-black px-2 md:px-5 py-1 md:py-2 rounded-full hover:bg-lime-200 md:text-2xl md:hidden lg:text-base">Get Started</button>
-              <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-6xl text-white cursor-pointer "></ion-icon>
+            <a class="hover:text-gray-500 text-white md:text-5xl lg:text-2xl" href="#">Cart(0)</a>
+              <button class="bg-lime-300 text-black px-2 md:px-5  py-1 md:py-2 rounded-full hover:bg-lime-200 md:text-2xl  lg:text-base flex sm:hidden lg:flex ">Sign in</button>
+              <button class="bg-lime-300 text-black px-2 md:px-5 py-1 md:py-2 rounded-full hover:bg-lime-200 md:text-2xl lg:text-base flex sm:hidden lg:flex">Get Started</button>
+              <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-6xl text-white cursor-pointer lg:hidden "></ion-icon>
           </div>
       </nav>
   </header>
@@ -68,23 +69,23 @@
           </div>
         </div> -->
       </div>
-      <div class="mainsection sm:height-auto bg-emerald-950 flex flex-col items-center w-full md:items-center mx-auto md:h-1/2">
-        <h1 class="text-white text-center md:pt-36 md:text-8xl  font-semibold">
+      <div class="mainsection sm:height-auto bg-emerald-950 flex flex-col items-center w-full md:items-center mx-auto md:h-1/2 lg:h-1/2">
+        <h1 class="text-white text-center md:pt-36 md:text-8xl lg:text-6xl md:pb-20 lg:pb-0 font-semibold">
           Comprehensive Approach To Digital Dominance
         </h1>
-        <p class="md:font-light text-center md:text-4xl font-extralight text-white mt-6">
+        <p class="md:font-light text-center md:text-4xl lg:text-xl lg:1/2 font-extralight text-white mt-6">
           In a rapidly evolving digital landscape, achieving dominance requires
           more than just tools –  it demands a comprehensive strategy that
           adapts, innovates, and delivers results.
         </p>
-        <div class="mt-10">
+        <div class="lg:mt-24 md:mt-28">
           <button
-            class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 p-3 uppercase text-sm border border-solid border-lime-300 bg-lime-300 mr-5 rounded-lg hover:bg-slate-200 animate-bounce"
+            class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 p-3 uppercase lg:text-sm md:text-3xl border border-solid border-lime-300 bg-lime-300 mr-5 rounded-lg hover:bg-slate-200 animate-bounce"
           >
             Get Started <i class="ri-arrow-right-up-line text-black"></i>
           </button>
           <button
-            class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 p-3 uppercase text-sm text-black border border-solid border-lime-300 bg-lime-300 rounded-lg hover:bg-slate-200"
+            class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 p-3 uppercase  lg:text-sm md:text-3xl text-black border border-solid border-lime-300 bg-lime-300 rounded-lg hover:bg-slate-200"
           >
             Discover Now
           </button>
@@ -100,39 +101,39 @@
     <div class="section3 mb-48  bg-stone-100">
       <div class="lg:ml-52 ml-32 mb-10 flex flex-col  bg-stone-100 mt-32">
         <h5
-          class="md:text-xs text-xs font-light  uppercase border border-solid rounded-2xl w-36 p-2 mb-2"
+          class="md:text-3xl lg:text-xs font-light  uppercase border border-solid rounded-2xl lg:w-36 md:w-80 p-2 mb-2  "
         >
           Features explored
         </h5>
-        <h2 class="md:text-4xl text-2xl flex">PowerFul Features</h2>
+        <h2 class="md:text-6xl lg:text-2xl flex">PowerFul Features</h2>
       </div>
       <div class="mainsection3 md:flex flex flex-col  lg:flex-row items-center gap-10 mx-5">
-        <div class="item1 w-full sm:w-1/2 md:w-1/2 lg:w-1/2">
+        <div class="item1 w-full  md:w-full lg:w-1/2 md:py-10 lg:py-0">
           <div class="border border-solid bg-stone-200 p-8 rounded-2xl">
-            <img src="/images/section3(1).svg" alt="" class="lg:mx-10 mx-5"/>
+            <img src="/images/section3(1).svg" alt="" class="md:h-full md:w-full lg:mx-0 md:mx-0"/>
           </div>
-          <h2 class="py-3 font-medium text-xl">Responsive Web Design</h2>
-          <p class="font-extralight">
+          <h2 class="py-3 font-normal md:text-6xl lg:text-xl md:text-center">Responsive Web Design</h2>
+          <p class="font-extralight md:text-4xl text-center md:py-4 lg:text-base">
             Create stunning websites optimized for any device, ensuring a user
             experience across desktop, and mobile.
           </p>
         </div>
-        <div class="item2 w-full sm:w-1/2 md:w-1/2 lg:w-1/2">
+        <div class="item2 w-full  md:w-full lg:w-1/2 md:py-10 lg:py-0">
           <div class="border border-solid bg-stone-200 p-8 rounded-2xl">
-            <img src="./images/section3(2).svg" alt="" class="lg:mx-10 mx-5"/>
+            <img src="./images/section3(2).svg" alt="" class="md:h-full md:w-full lg:mx-0 md:mx-0"/>
           </div>
-          <h2 class="py-3 font-medium text-xl">Security Features</h2>
-          <p class="font-extralight">
+          <h2 class="py-3 font-normal md:text-6xl lg:text-xl md:text-center">Security Features</h2>
+          <p class="font-extralight md:text-4xl text-center md:py-4 lg:text-base">
             Rest easy knowing your website and data are secure with built-in
             security features such as security updates.
           </p>
         </div>
-        <div class="item3  w-full sm:w-1/2 md:w-1/2 lg:w-1/2">
+        <div class="item3  w-full  md:w-full lg:w-1/2 md:py-10 lg:py-0">
           <div class="border border-solid bg-stone-200 p-8 rounded-2xl">
-            <img src="./images/section3(3).svg" alt="" class="lg:mx-10 mx-5"/>
+            <img src="./images/section3(3).svg" alt="" class="md:h-full md:w-full lg:mx-0 md:mx-0"/>
           </div>
-          <h2 class="py-3 font-medium text-xl">Analytics and Reporting</h2>
-          <p class="font-extralight">
+          <h2 class="py-3 font-normal md:text-6xl lg:text-xl md:text-center">Analytics and Reporting</h2>
+          <p class="font-extralight md:text-4xl text-center md:py-4 lg:text-base">
             Gain valuable insights into your website performance with advanced
             analytics and reporting tools.
           </p>
